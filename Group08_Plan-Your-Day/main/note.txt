@@ -1,0 +1,4 @@
+<input type = "checkbox" id = "start-mode" value = "Start">
+<label for="start-mode">Start</label>
+<input type = "checkbox" id = "right-now-mode" value = "Right now">
+<label for="right-now-mode">Right now</label>

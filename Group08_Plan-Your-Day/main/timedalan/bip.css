@@ -1,0 +1,22 @@
+*{
+  background: #999;
+}
+
+:root {
+  --gray: #999;
+  --blue: #0074d9;
+  --color: #333;
+  --background-color: #fff;
+  --border: 1px solid #eee;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  margin:5px;
+  width:200px;
+  height:200px;
+}

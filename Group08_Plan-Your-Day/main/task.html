@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+        <meta charset ='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="task.css">
+		<link rel="stylesheet" href = ".\fontawesome-free-6.1.1-web\css\all.min.css">
+	    <!--<link rel="stylesheet" href = ".\fontawesome-free-6.1.1-web\css\brands.min.css">-->
+        <!--
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <div class = "add-task">
+            <div class = "header">
+                <!--<i class="back-icon"></i>-->
+                <i class="fa-solid fa-angle-left"></i>
+                <div class = 'add-task-title'>
+                    <p><b>Add task</b></p>
+                </div>
+            </div>
+            <!--
+            <div class = 'task-icons'>
+                <ul>
+                    <li class = 'share-icon'>
+                        <i class="fa-solid fa-share-from-square"></i>
+                        <p>Share</p>
+                    </li>
+                    <li class = 'copy-icon'>
+                        <i class="fa-solid fa-copy"></i>
+                        <p>Copy</p>
+                    </li>
+                    <li class = 'delete-icon'>
+                        <i class="fa-solid fa-trash-can"></i>
+                        <p>Delete</p>
+                    </li>
+                    <li class = 'save-icon'>
+                        <i class="fas fa-save"></i>
+                        <p>Save</p>
+                    </li>
+                </ul>
+            </div>
+        -->
+            <div class = 'task-plan'>
+                <p>Title</p>
+            </div>
+            <div class = 'task-plan-input'>
+                <input type = "text" class = "plan-input">
+            </div>
+            <div class = "line">
+            </div>
+            <div class = 'task-date'>
+                <p>Date</p>
+                <!--<input type = "date" class = "calendar"  value = "2022-07-22">-->
+                <!--<script src="date.js"></script>-->
+            </div>
+            <div id = "date-date" class = "d-d">
+                <date-picker format="DD MMMM YYYY" class = "calendar-format"></date-picker>
+                <script src = 'calendar.js'></script>
+            </div>
+            <div class = "line">
+            </div>
+            <div class = 'task-time'>
+                <p class = 'time'><a href = "#" onclick = "javascript:timeSelection();" class = 'yes'>Time</a></p>
+                <p class = 'or'>|</p>
+                <p class = 'no-time'><a href = "#" onclick = "javascript:noTimeSelection();" class = 'no'>No time</a></p> 
+            </div>
+            <div class = 'time-here'>
+                <div id = "line-1" class = "line1">
+                    <script src = "timeSelectionMode.js"></script>
+                </div>
+                <div id = "line-2" class = "line2">
+                    <script src = "noTimeSelectionMode.js"></script>
+                </div>
+                <!--<script src = "getTime.js"></script>-->
+            </div>
+            <div class = 'task-description'>
+                <p>Description</p>
+            </div>
+            <div class = 'task-description-input'>
+                <input type = "text" class = 'd-input'>
+            </div>
+            <div class = "line">
+            </div>
+            <div class = 'task-tag'>
+                <p>Tags</p>
+            </div>
+            <div class = 'tags'>
+                <ul>
+                    <li class = "office">Office</li>
+                    <li class = "home">Home</li>
+                    <li class = "urgent">Urgent</li>
+                    <li class = "work">Work</li>
+                </ul>
+            </div>
+            <div class = 'add-new-tag'>
+                <p>+ Add new tag</p>
+            </div>
+            <div class = 'task-create'>
+                <p>Create</p>
+            </div>
+        </div>
+    </body>
+</html>
