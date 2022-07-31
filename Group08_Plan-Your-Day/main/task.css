@@ -319,14 +319,3 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: var(--white);
     padding: 2% 0 2% 0;
 }
-/*
-.back-icon{
-    position: absolute;
-    width: 14px;
-    height: 7px;
-    left: 51.5px;
-    top: 44px;
-
-    border: 1.5px dashed #121355;
-    transform: rotate(90deg);
-}*/
