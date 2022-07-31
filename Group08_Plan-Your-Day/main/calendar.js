@@ -1,4 +1,5 @@
-function getWeekNumber(date) {
+function getWeekNumber(date) 
+{
     const firstDayOfTheYear = new Date(date.getFullYear(), 0, 1);
     const pastDaysOfYear = (date - firstDayOfTheYear) / 86400000;
     

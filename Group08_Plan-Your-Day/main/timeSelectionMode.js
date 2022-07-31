@@ -1,4 +1,5 @@
-function timeSelection(){
+function timeSelection()
+{
     let d = new Date();
     let hH = d.getHours();
     let mM = d.getMinutes();
@@ -10,25 +11,29 @@ function timeSelection(){
 
     hH = (hH < 10) ? "0" + hH : hH;
     mM = (mM < 10) ? "0" + mM : mM;
+    
 
     let stringTime1 = String(hH + ':' + mM);
 
     let mTemp = Number(mM) + 30;
     let hTemp = Number(hH);
-
+    
     if (mTemp > 60){
         mTemp = Number(mTemp - 60);
         hTemp = Number(hTemp + 1);
     }
-    
+
     hTemp = (hTemp < 10) ? "0" + hTemp : hTemp;
     mTemp = (mTemp < 10) ? "0" + mTemp : mTemp;
-
-    let stringTime2 = String(hTemp + ':' + mTemp);
     
+    let stringTime2 = String(hTemp + ':' + mTemp);
+    //console.log(stringTime2)
     document.getElementById('line-1').innerHTML = `<input type = "time" id = "time-from-show" class = "timeFromShow" value = ${stringTime1}>`;
     document.getElementById('line-2').innerHTML = `<input type = "time" id = "time-to-show" class = "timeToShow" value = ${stringTime2}>`;
-    
+    document.getElementById('timeMode').style.color = "red";
+    document.getElementById('timeMode').style.fontWeight = "bold";
+    document.getElementById('no-timeMode').style.color = "#8A8BB3";
+    document.getElementById('no-timeMode').style.fontWeight = "normal";
 }
 
 

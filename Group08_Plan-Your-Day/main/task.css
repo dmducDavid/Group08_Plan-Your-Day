@@ -23,6 +23,8 @@
     --light-blue-purple: #A8AEDF;
     --button-background-color: white;
     --ccc : #ccc;
+    --green-1: rgb(0,178,0);
+    --black: black;
 }
 
 .add-task{
@@ -41,6 +43,15 @@
     display: flex;
     margin-left: 10%;
     margin-right: 3%;
+}
+
+.task-icons{
+    display: flex;
+    margin-top: -7px;
+}
+
+.task-icons div{
+    margin-left: 50%;
 }
 
 .task-plan{
@@ -86,9 +97,10 @@ input[type="text"]{
     margin-top: 3%;
 }
 
+
+
 .add-task-title{
     margin-left: 41%;
-    /*font-style: normal;*/
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;  
@@ -221,12 +233,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-left: 10%;
 }
 
-.task-tag{
+.task-tag-title{
     margin-top: 4%;
     display: flex;
     justify-content:flex-start;
     margin-left: 10%;
     color: var(--like-gray);
+    text-decoration: underline var(--black) 5px;
+    text-underline-offset: 3px;
 }
 
 .tags ul{
@@ -290,6 +304,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: var(--white);
     font-weight: 500;
     font-size: 18px;
+}
+
+.ant{
+    text-decoration: none;
+    color: var(--like-gray);
+}
+
+.inputTag{
+    border-radius: 22px;
+    background-color: var(--green-1);
+    width: 16%;
+    height: 100%;
+    color: var(--white);
+    padding: 2% 0 2% 0;
 }
 /*
 .back-icon{
